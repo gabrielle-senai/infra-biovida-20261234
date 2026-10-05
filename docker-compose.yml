@@ -1,0 +1,13 @@
+services:
+  portal:
+    image: gabriellecascardi/biovida-portal-20261234:2.0
+    container_name: biovida-portal
+    restart: unless-stopped
+    ports:
+      - "51234:80"
+  blog:
+    image: gabriellecascardi/biovida-blog-20261234:2.0
+    container_name: biovida-blog
+    restart: unless-stopped
+    ports:
+      - "61234:80"
